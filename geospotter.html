@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title> Geospotter </title>
+    <link rel = "stylesheet" href = "geospotter.css"> 
+  </head>
+
+  <body style ="
+    height: 900px;
+  ">
+    <div class = "geospotter-title-div">
+      <p class = "geospotter-title">GEOSPOTTER</p>
+    </div>
+
+    <div style="
+      display: grid;
+      grid-template-columns: 35% 65%;
+      height: 100%;
+    ">
+      <div class = "game-menu" style ="
+        display: grid;
+        grid-template-columns: 20% 80%;
+        height: 100%
+      ">
+        <div class = "options-menu">
+
+        </div>
+
+        <div class = "game-options">
+
+            <div class = "objects-to-guess">
+              <p class = "objects-to-choose-title">
+                Избери обекти
+              </p>       
+              <div class = "object-options">
+                <div class = "object">
+                  <input type="checkbox" class = "object-checkbox">
+                  <span class = "object-text"> Планини </span>
+                </div>
+                
+                <div class = "object">
+                  <input type="checkbox" class = "object-checkbox">
+                  <span class = "object-text"> Морета </span>
+                </div>
+
+                <div class = "object">
+                    <input type="checkbox" class = "object-checkbox">
+                    <span class = "object-text"> Реки </span>
+                </div>
+
+                <div class = "object">
+                  <input type="checkbox"  class = "object-checkbox">
+                  <span class = "object-text"> Океани </span>
+                </div>
+            
+              
+              
+              </div>
+            </div>
+
+            <div class="add-object-section">
+                <p class = "objects-to-choose-title">Добави обект</p>
+                
+                <input placeholder='"Рила"' type="textbox" class = "objects-input">
+
+                <button class = "add-button" > Добави</button>
+
+            </div>
+
+            <div class="find-object-section">
+              <p class = "objects-to-choose-title"> Намери обект</p>   
+              
+              <button class = "find-button" > Намери</button>
+              <input placeholder='???' type="textbox" class = "objects-output">
+
+           
+
+            </div>
+     
+        </div>
+      </div>
+
+      <div class = "game-map">
+        <img src="map_images/topographic_map.png" class="mapper"> </img>
+      </div>
+      
+    </div>
+
+    <script src="geospotter.js"> </script>
+  </body>
+</html>
